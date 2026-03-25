@@ -7,14 +7,14 @@ class AlienInvasion: # Overall class to manage game assets and behavior
         pygame.init()
         self.screenWidth = 1280
         self.screenHeight = 800
-        self.ship = Ship(self)
         self.screen = pygame.display.set_mode((1280, 800))
+
         # Setting background color
         self.bgColor = (27, 37, 77) # (128, 180, 130)
 
         pygame.display.set_caption("Definitely not Space Invaders")
         self.clock = pygame.time.Clock()
-
+        self.ship = Ship(self)
 
 
     def runGame(self): # Start the main loop for the game
